@@ -10,23 +10,23 @@ O foco da arquitetura foi a **Programação Orientada a Objetos (POO)** e a **Co
 
 ## 💻 Habilidades Técnicas em Destaque
 
-Este projeto prova o domínio das seguintes competências essenciais para engenheiros de software e analistas de dados:
+Este projeto prova o domínio das seguintes competências:
 
 | Categoria | Habilidade Demonstrada |
 | :--- | :--- |
 | **Arquitetura & POO** | Criação de uma hierarquia de classes (Herança e Abstração) com `BaseCollector` e `CoinCollector`. Uso de **Composição** para orquestrar a pipeline (`Collector` + `Processor`). |
 | **Processamento de Dados** | Utilização da biblioteca **Pandas** para manipulação, limpeza e transformação de dados brutos (cálculo de variação, formatação numérica, filtragem de colunas). |
 | **Integração (APIs)** | Consumo robusto de APIs RESTful utilizando a biblioteca `requests`, incluindo tratamento de erros e gestão de *timeouts*. |
-| **Automação & Entrega** | Implementação de um **Bot Telegram** como camada de interface (UI) usando `python-telegram-bot`, garantindo a entrega do valor de negócio ao usuário final. |
+| **Automação & Entrega** | Implementação de um **Telegram Bot** como camada de interface (UI) usando `python-telegram-bot`, garantindo a entrega do valor de negócio ao usuário final. |
 
 ---
 
 ## 🛠️ Stack Tecnológica
 
-* **Linguagem:** Python 3.10+
-* **Gestão de Ambientes:** Conda
+* **Linguagem:** Python 3.13
+* **Gestão de Ambientes:** Anaconda
 * **Bibliotecas Principais:**
-    * `requests`: Requisições HTTP robustas.
+    * `requests`: Requisições HTTP.
     * `pandas`: Limpeza e manipulação de dados.
     * `python-telegram-bot`: Interface de comunicação.
 
@@ -55,5 +55,6 @@ conda activate crypto-pipeline
 # Instale as dependências (Priorizando Conda, usando pip para o Bot)
 conda install pandas requests
 pip install python-telegram-bot
+
 
 
