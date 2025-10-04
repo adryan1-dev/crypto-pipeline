@@ -2,7 +2,7 @@
 
 ## 🌟 Visão Geral do Projeto
 
-Este projeto demonstra a construção de uma **pipeline completa e modular de dados**, desenvolvida em Python, para coletar cotações de criptomoedas em tempo real (via CoinGecko API) e entregar resultados formatados por meio de um **Bot Telegram**.
+Este projeto demonstra a construção de uma **pipeline completa e modular de dados**, desenvolvida em Python, para coletar cotações de criptomoedas em tempo real (via CoinGecko API) e entregar resultados formatados por meio de um **Telegram Bot**.
 
 O foco da arquitetura foi a **Programação Orientada a Objetos (POO)** e a **Composição** para garantir código limpo, testável e de fácil manutenção, simulando um ambiente de trabalho de engenharia de software real.
 
@@ -53,3 +53,4 @@ conda activate crypto-pipeline
 # Instale as dependências (Priorizando Conda, usando pip para o Bot)
 conda install pandas requests
 pip install python-telegram-bot
+
