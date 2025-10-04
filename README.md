@@ -6,16 +6,18 @@ Este projeto demonstra a construção de uma **pipeline completa e modular de da
 
 O foco da arquitetura foi a **Programação Orientada a Objetos (POO)** e a **Composição** para garantir código limpo, testável e de fácil manutenção, simulando um ambiente de trabalho de engenharia de software real.
 
+---
 
 ## 💻 Habilidades Técnicas em Destaque
 
 Este projeto prova o domínio das seguintes competências essenciais para engenheiros de software e analistas de dados:
 
+| Categoria | Habilidade Demonstrada |
+| :--- | :--- |
 | **Arquitetura & POO** | Criação de uma hierarquia de classes (Herança e Abstração) com `BaseCollector` e `CoinCollector`. Uso de **Composição** para orquestrar a pipeline (`Collector` + `Processor`). |
 | **Processamento de Dados** | Utilização da biblioteca **Pandas** para manipulação, limpeza e transformação de dados brutos (cálculo de variação, formatação numérica, filtragem de colunas). |
 | **Integração (APIs)** | Consumo robusto de APIs RESTful utilizando a biblioteca `requests`, incluindo tratamento de erros e gestão de *timeouts*. |
 | **Automação & Entrega** | Implementação de um **Bot Telegram** como camada de interface (UI) usando `python-telegram-bot`, garantindo a entrega do valor de negócio ao usuário final. |
-| **Clean Code** | Uso de *type hinting* (`typing` module) e boas práticas de estruturação de código para garantir tipagem e legibilidade. |
 
 ---
 
@@ -53,4 +55,5 @@ conda activate crypto-pipeline
 # Instale as dependências (Priorizando Conda, usando pip para o Bot)
 conda install pandas requests
 pip install python-telegram-bot
+
 
