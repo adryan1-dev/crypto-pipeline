@@ -23,16 +23,16 @@ class DataProcessor:
         self.df = pd.DataFrame(self._brute_data)
 
         self.df.rename(columns={
-            'current_price': 'Preço',
-            'total_volume': 'Volume_24h',
-            'price_change_percentage_24h': 'Variacao_24h',
+            'current_price': 'preço',
+            'total_volume': 'volume_24h',
+            'price_change_percentage_24h': 'variacao_24h',
         }, inplace=True)
 
-        self.df['status_variacao'] = self.df['Variacao_24h'].apply(self._variation_format)
-        self.df['Preço'] = self.df['Preço'].round(2)
+        self.df['status_variacao'] = self.df['variacao_24h'].apply(self._variation_format)
+        self.df['preço'] = self.df['preço'].round(2)
 
         print('\nDados processados e prontos para exibição.')
-        return self.df [['name', 'symbol', 'Preço', 'Volume_24h', 'status_variacao']]
+        return self.df [['name', 'symbol', 'preço', 'volume_24h', 'status_variacao']]
 
 if __name__ == '__main__':
     print('--- INICIANDO TESTE DA PIPELINE ---')

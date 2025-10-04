@@ -29,7 +29,7 @@ class CoinCollector(BaseCollector):
 
 if __name__ == '__main__':
     coin_target =['bitcoin', 'ethereum', 'solana', 'dogecoin']
-    fiat_coin_target = ['usd']
+    fiat_coin_target = ['brl']
 
     collector = CoinCollector(coin_target, fiat_coin_target)
 
