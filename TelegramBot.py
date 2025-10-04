@@ -9,7 +9,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO
                     )
 
-TOKEN = '8272269865:AAHzx1Svsb9_sjRAyUqiGxw3EbV7bYVOQ-s'
+TOKEN = 'xxxxxxxxxx'
 COINS = ['bitcoin', 'ethereum', 'solana', 'dogecoin']
 FIAT = ['brl']
 
