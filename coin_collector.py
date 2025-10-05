@@ -1,7 +1,7 @@
 import requests
 from typing import Dict,List, Any
 
-from BasePipeline import BaseCollector
+from base_pipeline import BaseCollector
 class CoinCollector(BaseCollector):
     API_URL = "https://api.coingecko.com/api/v3/coins/markets"
 

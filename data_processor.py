@@ -1,6 +1,6 @@
 import pandas as pd
 from typing import List, Dict,Any, Union
-from CoinCollector import CoinCollector
+from coin_collector import CoinCollector
 
 class DataProcessor:
     def __init__(self, brute_data: List[Dict[str,Any]]):

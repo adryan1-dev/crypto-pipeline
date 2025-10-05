@@ -1,5 +1,5 @@
-from CoinCollector import CoinCollector
-from DataProcessor import DataProcessor
+from coin_collector import CoinCollector
+from data_processor import DataProcessor
 
 import logging
 from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
