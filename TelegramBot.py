@@ -2,20 +2,27 @@ from CoinCollector import CoinCollector
 from DataProcessor import DataProcessor
 
 import logging
-from telegram import Update
+from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
 from telegram.ext import Application, CommandHandler, ContextTypes
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO
                     )
 
-TOKEN = '8272269865:AAHzx1Svsb9_sjRAyUqiGxw3EbV7bYVOQ-s'
+TOKEN = os.getenv('TELEGRAM_TOKEN')
 COINS = ['bitcoin', 'ethereum', 'solana', 'dogecoin']
 FIAT = ['brl']
+REPLY_KEYBOARD = [['/precos']]
+MARKUP = ReplyKeyboardMarkup(REPLY_KEYBOARD, one_time_keyboard=True, resize_keyboard=True)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
-        '👋 Olá, eu sou o Cypto Pip! Use /preços para ver as cotações.'
+        '👋 Olá, eu sou o Cypto Pip! Clique no botão abaixo para ver as cotações.',
+        reply_markup = MARKUP
     )
 
 async def prices(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:

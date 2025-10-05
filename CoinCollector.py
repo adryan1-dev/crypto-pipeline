@@ -4,7 +4,6 @@ from typing import Dict,List, Any
 from BasePipeline import BaseCollector
 class CoinCollector(BaseCollector):
     API_URL = "https://api.coingecko.com/api/v3/coins/markets"
-    API_KEY = "CG-Z8TRYAG3c8Fva7bLwJ9U4piQ"
 
     def fetch_data(self) -> List[Dict[str,Any]]:
         print(f'-> Coletando dados da CoinGecko para {self._fiat_coin.upper()}...')
