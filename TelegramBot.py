@@ -45,7 +45,7 @@ async def prices(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     message = '📊 **Cotaçoes Atuais**\n\n'
     for index, row in df_final.iterrows():
-        symbol = 'R$' if row['symbol'].upper() == 'BRL' else '$'
+        symbol = 'R$'
 
         message += (
             f'🔸 **{row['name']}** ({row['symbol'].upper()}):\n'
